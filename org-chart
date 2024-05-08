@@ -1,32 +1,35 @@
-graph TD;
-    DSC[Director of the Data Science Center]
-    DISR[Data Infrastructure for Scholarly Research]
-    GSS[Geospatial Services and Support]
-    ET[Emerging Technologies (LuxLab)]
-    DSCONS[Data Science Consulting]
-    INSTR[Instruction]
+```mermaid
+graph TD
+    DSC("Director of the Data Science Center")
+    DISR("Data Infrastructure for Scholarly Research")
+    GSS("Geospatial Services and Support")
+    ET("Emerging Technologies (LuxLab)")
+    DSCONS("Data Science Consulting")
+    INSTR("Instruction")
 
-    DSC --> DISR
-    DSC --> GSS
-    DSC --> ET
-    DSC --> DSCONS
-    DSC --> INSTR
+    DSC -->|Oversees| DISR
+    DSC -->|Oversees| GSS
+    DSC -->|Oversees| ET
+    DSC -->|Oversees| DSCONS
+    DSC -->|Oversees| INSTR
 
-    DISR --> DV[UCLA Dataverse]
-    DISR --> RD[Redivis]
-    DISR --> PT[Potree (3D Data Visualization)]
-    DISR --> GDT[Geospatial Discovery Tool]
-    DISR --> MTCR[Mid-Tier Computing Resources]
+    DISR -->|Manages| DV("UCLA Dataverse")
+    DISR -->|Manages| RD("Redivis")
+    DISR -->|Manages| PT("Potree (3D Data Visualization)")
+    DISR -->|Manages| GDT("Geospatial Discovery Tool")
+    DISR -->|Manages| MTCR("Mid-Tier Computing Resources")
 
-    GSS --> RSDS[Research Support for Spatial Data Science]
-    GSS --> ETI[Administration of ESRI Tools]
-    GSS --> LGE[Leadership in Geospatial Events]
+    GSS -->|Supports| RSDS("Research Support for Spatial Data Science")
+    GSS -->|Administers| ETI("Administration of ESRI Tools")
+    GSS -->|Leads| LGE("Leadership in Geospatial Events")
 
-    ET --> ThreeD[3D Scanning]
-    ET --> AI[Aerial Imagery (Drone Operations)]
-    ET --> ThreeDP[3D Printing]
+    ET -->|Provides| ThreeD("3D Scanning")
+    ET -->|Provides| AI("Aerial Imagery (Drone Operations)")
+    ET -->|Provides| ThreeDP("3D Printing")
 
-    DSCONS --> DSQ[DataSquad (Student-Led Consulting Team)]
+    DSCONS -->|Includes| DSQ("DataSquad (Student-Led Consulting Team)")
 
-    INSTR --> CP[Carpentries Program]
-    INSTR --> WS[Workshops on Data Science Tools and Data Literacy]
+    INSTR -->|Coordinates| CP("Carpentries Program")
+    INSTR -->|Teaches| WS("Workshops on Data Science Tools and Data Literacy")
+
+```
